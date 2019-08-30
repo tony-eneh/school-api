@@ -1,3 +1,12 @@
+export const UNIT = {
+    ONE: 1,
+    TWO: 2,
+    THREE: 3,
+    FOUR: 4,
+};
+
+export const COEFFICIENT = UNIT;
+
 export const EMPLOYEE_TYPE = {
     TEACHING: "TEACHING",
     NONTEACHING: "NON-TEACHING",
@@ -328,7 +337,7 @@ export const DATABASE = {
             virtuals: true,
             // eslint-disable-next-line func-names
             // eslint-disable-next-line object-shorthand
-            transform: function (doc, ret) {
+            transform: function(doc, ret) {
                 ret.id = ret._id;
                 delete ret._id;
                 // eslint-disable-next-line no-underscore-dangle
